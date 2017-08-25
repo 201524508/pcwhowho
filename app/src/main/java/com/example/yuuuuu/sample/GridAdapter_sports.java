@@ -180,13 +180,14 @@ public class GridAdapter_sports extends BaseAdapter {
                             calendar.setTimeInMillis(System.currentTimeMillis());
 
                             calendar.set(Calendar.YEAR, 2017);
-                            calendar.set(Calendar.MONTH, Calendar.OCTOBER);
-                            calendar.set(Calendar.DATE, 25);
+                            calendar.set(Calendar.MONTH, Calendar.FEBRUARY);
+                            calendar.set(Calendar.DATE, mDate);
                             calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
                             calendar.set(Calendar.MINUTE, minute);
 
+                            //푸시 알림은 2월부터 설정이 가능하기 때문에
+                            //기능 확인을 위해 편의상 현재 시간에 바로 푸시 알림이 뜨도록 설정함
                             am.set(AlarmManager.RTC, System.currentTimeMillis(), sender);
-                            //am.notify();
                         }
                     };
 
