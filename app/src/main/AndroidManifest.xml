@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yuuuuu.sample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus"  android:required="false"/>
+
+    <supports-screens android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="평창WHOWHO"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="평창WHOWHO">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".FlagListActivity">
+        </activity>
+        <activity android:name=".CameraActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+            >
+        </activity>
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.example.yuuuuu.sample.ALARM_START"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.example.yuuuuu.sample.ALARM_START"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".CalendarView">
+        </activity>
+        <activity android:name=".CTCalendarView">
+        </activity>
+        <activity android:name=".BookmarkActivity">
+        </activity>
+        <activity android:name=".PlayerActivity"/>
+        <activity android:name=".PlayerDetailActivity" android:theme="@android:style/Theme.Dialog"
+            />
+        <activity android:name=".TutorialActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

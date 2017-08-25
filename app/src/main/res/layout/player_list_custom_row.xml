@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:src="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/checkonoff"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/player"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toLeftOf="@+id/checkbox"
+        android:layout_toRightOf="@+id/country"
+        android:layout_marginRight="3dp"
+        />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@+id/checkbox"
+        android:layout_toRightOf="@+id/country"
+        android:layout_below="@id/player"
+        android:layout_marginRight="3dp"
+        android:textColor = "#696969"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/country"
+        />
+
+</RelativeLayout>

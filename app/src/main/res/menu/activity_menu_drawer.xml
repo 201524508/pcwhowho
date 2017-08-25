@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/LIKE"
+        android:title="즐겨찾기"
+        android:icon="@drawable/btn_star_on"/>
+
+    <item android:title="설상종목">
+        <menu>
+            <item
+                android:id="@+id/ALP"
+                android:icon="@drawable/icon_alp"
+                android:title="알파인 스키" />
+            <item
+                android:id="@+id/BTH"
+                android:icon="@drawable/icon_bth"
+                android:title="바이애슬론" />
+            <item
+                android:id="@+id/CCS"
+                android:icon="@drawable/icon_ccs"
+                android:title="크로스컨트리 스키" />
+            <item
+                android:id="@+id/FRS"
+                android:icon="@drawable/icon_frs"
+                android:title="프리스타일 스키" />
+            <item
+                android:id="@+id/NCB"
+                android:icon="@drawable/icon_ncb"
+                android:title="노르딕 복합" />
+            <item
+                android:id="@+id/SBD"
+                android:icon="@drawable/icon_sbd"
+                android:title="스노보드" />
+            <item
+                android:id="@+id/SJP"
+                android:icon="@drawable/icon_sjp"
+                android:title="스키점프" />
+        </menu>
+    </item>
+
+    <item android:title="빙상 종목">
+        <menu>
+            <item
+                android:id="@+id/CUR"
+                android:icon="@drawable/icon_cur"
+                android:title="컬링" />
+            <item
+                android:id="@+id/FSK"
+                android:icon="@drawable/icon_fsk"
+                android:title="피겨 스케이팅" />
+            <item
+                android:id="@+id/IHO"
+                android:icon="@drawable/icon_iho"
+                android:title="아이스 하키" />
+            <item
+                android:id="@+id/SSK"
+                android:icon="@drawable/icon_ssk"
+                android:title="스피드 스케이팅" />
+            <item
+                android:id="@+id/STK"
+                android:icon="@drawable/icon_stk"
+                android:title="쇼트트랙 스피드 스케이팅" />
+        </menu>
+    </item>
+
+    <item android:title="슬라이딩 종목">
+        <menu>
+            <item
+                android:id="@+id/BOB"
+                android:icon="@drawable/icon_bob"
+                android:title="봅슬레이" />
+            <item
+                android:id="@+id/LUG"
+                android:icon="@drawable/icon_lug"
+                android:title="루지" />
+            <item
+                android:id="@+id/SKN"
+                android:icon="@drawable/icon_skn"
+                android:title="스켈레톤" />
+        </menu>
+    </item>
+</menu>
